@@ -1,0 +1,9 @@
+def hello
+    puts "Hello, world!"
+    puts "$0       = #{$0}"
+    puts "__FILE__ = #{__FILE__}"
+end
+
+if $PROGRAM_NAME == __FILE__
+  hello
+end
